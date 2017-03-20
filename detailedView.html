@@ -1,0 +1,19 @@
+<div class="container-fluid" id="finalView">
+    <div class="row">
+        <div class="col-lg-12">
+            <span class="backImg" ng-click="searchBack()"><img src="pages/back-arrow-circle.png"></span><img ng-src="{{movieDetails.Poster}}">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 col-md-12 text-center titleDetail ">
+          {{movieDetails.Title}}
+          <br>
+          Release Year : {{movieDetails.Year}}
+        </div>
+    </div>
+    <div class="row well">
+        <div class="col-lg-12 col-md-12 text-center" >
+            {{movieDetails.Plot}}
+        </div>
+    </div>
+</div>

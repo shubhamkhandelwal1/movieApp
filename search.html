@@ -1,0 +1,16 @@
+<div class="container-fluid search-page footer">
+    <div class="row">
+        <div class="col-lg-12 col-sm-12 col-md-12 text-center">
+            <span class="backImg"><img src="pages/back-arrow.png" style="float:left" ng-click="goBack()">
+            </span>
+            <h1>Search Result<br/>{{movieDetails.Title}}</h1>
+        </div>
+    </div>		
+    <div class="row well">
+        <div class="col-lg-12 col-sm-12 col-md-12 text-center">
+          <img ng-src="{{movieDetails.Poster}}" ng-click="getDetail()"></img>
+        <div class="year" ng-click="getDetail()">&nbsp; &nbsp;{{movieDetails.Title}}<br>&nbsp; &nbsp;Release Year:&nbsp;  {{movieDetails.Year}}</div>
+    </div>
+    </div>
+</div>
+

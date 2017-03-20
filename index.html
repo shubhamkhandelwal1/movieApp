@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title>Movies App</title>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Arima+Madurai|Atma" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+		<link  href="movies.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="angular.js"></script>
+		<script type="text/javascript" src="moviesScript.js"></script>
+	</head>
+	<body >
+			<div class="container-fluid" ng-controller="apiCtrll">
+					<div class="row">
+						<div class="col-lg-12">
+								<div class="text-center"><img src="pages/omdb-logo.png"></div>
+						</div>
+					</div>
+					<div class="row header-setup">
+						<div class="col-lg-12 header-content">
+							<div class="header text-center"><h1>Search for your Favourite movie...</h1></div>
+						</div>
+					</div>
+					<div class="row search-panel">
+							<div class="col-lg-12 text-center">
+								<input type="search"  ng-model="movieName" id="search"><div id="arrow" ng-click="findMovie()">&nbsp; ></div>
+							</div>
+					</div>
+					<div class="row footer-setup">
+						<div class="col-lg-12 footer-content">
+							<div class="footer text-center"><h1>THE LARGEST<br/>ONLINE MOVIE DATABASE</h1></div>
+						</div>
+					</div>
+			</div>
+	</body>
+</html>
